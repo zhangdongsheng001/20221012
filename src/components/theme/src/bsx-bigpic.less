@@ -1,0 +1,35 @@
+/*
+ * bsx-bigpic组件样式
+ *
+ * @Author: 谢力 843926058@qq.com
+ * @Date:   2018-06-06 14:08:51
+ * @Last Modified by:   谢力
+ * @Last Modified time: 2018-06-06 14:08:56
+ */
+.app_bigpic-master{
+	left:50%;
+	top:0;
+	width:100%;
+	max-width:20rem;
+	bottom:0;
+	z-index:999;
+	transform:translateX(-50%);
+    background-color:rgba(0,0,0,0.3);
+	position:absolute;
+	.app_bigpic-container{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		img{
+			object-fit: contain;
+		}
+		span{
+			position: absolute;
+			top:0.5rem;
+			right: 0.5rem;
+			font-size: 2rem;
+			font-weight: 300;
+			color: #fff;
+		}
+	}
+}

@@ -1,0 +1,20 @@
+{
+    "status": 0,
+    "msg": "ok",
+    "returnData": {
+        "list":[
+            {
+        		"value": "zhinan",
+        		"label": "指南"
+        	},
+        	{
+        		"value": "zujian",
+        		"label": "组件"
+        	},
+        	{
+        		"value": "ziyuan",
+        		"label": "资源"
+        	}
+        ]
+    }
+}

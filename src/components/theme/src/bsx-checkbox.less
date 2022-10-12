@@ -1,0 +1,82 @@
+/*
+ * bsx-checkbox组件样式
+ *
+ * @Author: 谢力 843926058@qq.com
+ * @Date:   2018-06-06 14:08:51
+ * @Last Modified by:   谢力
+ * @Last Modified time: 2018-06-06 14:08:56
+ */
+.app_checkbox{
+	position:relative;
+	cursor:default;
+	.app_checkbox-icon{
+		position:relative;
+		width:0.8rem;
+		height:0.8rem;
+		border:solid 1px #ddd;
+		border-radius:0.1rem;
+		.app_checkbox-inner{
+			position:absolute;
+			left:0;
+			top:0;
+			bottom:0;
+			right:0;
+			&.has-checked{
+				background-color:@base-color;
+			}
+			i{
+				&.icon{
+					font-size:0.5rem;
+					line-height:0.8rem;
+					color:#fff;
+				}
+				&.indeterminate{
+					position:absolute;
+					left:50%;
+					top:50%;
+					transform: translate(-50%,-50%);
+					width:0.3rem;
+					height:0.05rem;
+					background-color:@base-color;
+				}
+			}
+			&.app_checkbox-enter-active,&.app_checkbox-leave-active{
+		        transition:all 0.15s ease-out;
+		    }
+		    &.app_checkbox-enter{
+		        opacity: 0;
+				transform:scale(0);
+		    }
+		    &.app_checkbox-enter-to,.app_checkbox-leave{
+		        opacity: 1;
+				transform:scale(1);
+		    }
+		    &.app_checkbox-leave-to{
+		        opacity: 0;
+				transform:scale(0);
+		    }
+		}
+		.app_checkbox-input{
+			display:none;
+		}
+	}
+	.app_checkbox-label{
+		font-size:0.6rem;
+		margin-left:0.3rem;
+		line-height:0.8rem;
+	}
+	&.is-checked{
+		.app_checkbox-icon{
+			border-color:@base-color;
+		}
+		.app_checkbox-label{
+			color:@base-color;
+		}
+	}
+	&.disabled{
+		opacity:0.5;
+		.app_checkbox-icon{
+			background-color:#eee;
+		}
+	}
+}

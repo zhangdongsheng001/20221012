@@ -1,0 +1,63 @@
+/*
+ * bsx-toast组件样式
+ *
+ * @Author: 谢力 843926058@qq.com
+ * @Date:   2018-06-06 14:08:51
+ * @Last Modified by:   谢力
+ * @Last Modified time: 2018-06-06 14:08:56
+ */
+/* @toast-true-color:#10aa0d;
+@toast-true-background-color:rgba(230,253,248,0.7);
+@toast-true-border-color:#00b98d; */
+ @toast-true-color:#fff;
+@toast-true-background-color:rgba(0,0,0,0.8);
+@toast-true-border-color:rgba(0,0,0,0.8);
+@toast-false-color:#e3362a;
+@toast-false-background-color:rgba(254,238,237,0.7);
+@toast-false-border-color:#ed9ea1;
+.app_dialog-toast{
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    padding:0.5rem;
+    max-width:18rem;
+    border-radius:1.1rem;
+    z-index:9999;
+    line-height:1.2rem;
+    .app_toast-icon{
+        font-size:0.8rem;
+        margin:0 0.3rem 0 0;
+    }
+    p{
+        line-height:1.1rem;
+        font-size:0.7rem;
+        word-break:break-all;
+        white-space: nowrap;
+    }
+    &.true{
+        border:solid 1px @toast-true-border-color;
+        box-shadow:0 0 3px @toast-true-border-color inset;
+        background-color:@toast-true-background-color;
+        color:@toast-true-color;
+    }
+    &.false{
+        border:solid 1px @toast-false-border-color;
+        box-shadow:0 0 3px @toast-false-border-color inset;
+        background-color:@toast-false-background-color;
+        color:@toast-false-color;
+    }
+}
+.app_toast-enter-active,.app_toast-leave-active{
+    transition:all ease-out 0.3s;
+}
+.app_toast-enter{
+    opacity: 0;
+    margin-top:-1.5rem;
+}
+.app_toast-enter-to,.app_toast-leave{
+    opacity: 1;
+}
+.app_toast-leave-to{
+    opacity: 0;
+    margin-top:1.5rem;
+}

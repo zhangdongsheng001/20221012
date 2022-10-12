@@ -1,0 +1,92 @@
+/*
+ * bsx-confirm组件样式
+ *
+ * @Author: 谢力 843926058@qq.com
+ * @Date:   2018-06-06 14:08:51
+ * @Last Modified by:   谢力
+ * @Last Modified time: 2018-06-06 14:08:56
+ */
+.app_confirm-master{
+	left:50%;
+	top:0;
+	width:100%;
+	max-width:20rem;
+	bottom:0;
+	z-index:999;
+	transform:translateX(-50%);
+    background-color:rgba(0,0,0,0.3);
+	position:absolute;
+	.app_confirm-container{
+		position: absolute;
+    	left:1.8rem;
+		right:1.8rem;
+    	top:50%;
+        transform: translateY(-50%);
+    	border-radius:0.85rem;
+		background-color:#fff;
+		overflow:hidden;
+		.app_confirm-title{
+			font-size: 0.85rem;
+			margin-top:1.4rem;
+			margin-left: 0.85rem;
+			font-weight: bold;
+		}
+		.app_confirm-text{
+			font-size:0.8rem;
+			padding:0.4rem 0.85rem 1.2rem 0.85rem;
+			line-height:1.2rem;
+			color:#333;
+			word-break:break-all;
+		}
+		.app_confirm-bottom{
+			border-top:solid 1px #ddd;
+			.app_confirm-button{
+				font-size:0.8rem;
+				line-height:2.5rem;
+				text-align:center;
+				position:relative;
+				&.cancel{
+					&:after{
+						content:'';
+						top:0;
+						right:0;
+						bottom:0;
+						position:absolute;
+						border-right:solid 1px #ddd;
+					}
+				}
+				&.sure{
+					color:@base-active-color;
+					background: transparent;
+				}
+			}
+		}
+	}
+	&.app_confirm-enter-active,&.app_confirm-leave-active{
+        transition:all ease-out 0.3s;
+		.app_confirm-container{
+			transition:all ease-out 0.3s;
+		}
+    }
+    &.app_confirm-enter{
+        opacity: 0;
+		.app_confirm-container{
+			opacity: 0;
+			transform: translateY(-50%) scale(0);
+		}
+    }
+    &.app_confirm-enter-to,.app_confirm-leave{
+        opacity: 1;
+		.app_confirm-container{
+			opacity: 1;
+			transform: translateY(-50%) scale(1);
+		}
+    }
+    &.app_confirm-leave-to{
+        opacity: 0;
+		.app_confirm-container{
+			opacity: 0;
+			transform: translateY(-50%) scale(0);
+		}
+    }
+}

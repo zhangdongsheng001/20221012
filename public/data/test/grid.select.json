@@ -1,0 +1,28 @@
+{
+    "status": 0,
+    "msg": "ok",
+    "returnData": {
+        "list":[
+            {
+		        "baseType": "10",
+		        "directUserName": "钢坯",
+                "orderNum": "",
+                "transType": "11",
+                "goodsType": "A",
+		        "channelType": "10",
+                "prodType": "10",
+                "stockType": "10"
+		    },
+            {
+		        "baseType": "20",
+		        "directUserName": "线材",
+                "orderNum": "",
+                "transType": "11",
+                "goodsType": "A",
+		        "channelType": "10",
+                "prodType": "10",
+                "stockType": "10"
+		    }
+        ]
+    }
+}

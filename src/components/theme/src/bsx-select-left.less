@@ -1,0 +1,162 @@
+/*
+ * bsx-select组件样式
+ *
+ * @Author: 谢力 843926058@qq.com
+ * @Date:   2018-06-06 14:08:51
+ * @Last Modified by:   谢力
+ * @Last Modified time: 2018-06-06 14:08:56
+ */
+.app_selectLeft-master{
+	left:50%;
+	top:0;
+	width:100%;
+	max-width:20rem;
+	bottom:0;
+	z-index:999;
+	transform:translateX(-50%);
+    background-color:rgba(0,0,0,0.3);
+	position:absolute;
+	.app_selectLeft-container::after{
+		content:'';
+		width: 2rem;
+		height:0.2rem ;
+		background-color: #ECECEC;
+		position: absolute;
+		left: 50%;
+		top:0.5rem;
+		margin-left: -1rem;
+	}
+	.app_selectLeft-container{
+		position:absolute;
+		bottom:0;
+		left:0;
+		right:0;
+		background-color:#fff;
+		overflow:hidden;
+		padding:1.4rem 0.5rem 0.5rem;
+		color:#222;
+		.app_selectLeft-head{
+			line-height:2rem;
+			z-index:2;
+		}
+		.app_selectLeft-bottom{
+			margin-top:0.5rem;
+			div{
+				height: 2.6rem;
+				line-height: 2.6rem;
+				background-color: @base-color;
+				border-radius: 0.3rem;
+				text-align: center;
+				color: #fff;
+				font-size: 0.8rem;
+				
+			}
+		}
+		.app_selectLeft-body{
+			border:solid 1px #E3E3E3;
+			border-radius: 0.5rem;
+			position:relative;
+			z-index:1;
+			.app_selectLeft-main{
+				position:relative;
+				height:11rem;
+				&.m:after{
+					content:'';
+					top:0;
+					left:0;
+					bottom:0;
+					position:absolute;
+					border-left:solid 1px #ddd;
+					z-index:-1;
+				}
+				.app_selectLeft-box{
+					position:relative;
+					//overflow:hidden;
+					overflow-y: scroll;
+					.app_selectLeft-list{
+						position:relative;
+						&.active{
+							transition:all ease-out 0.3s;
+						}
+						.app_selectLeft-item{
+							padding: 0 0.5rem;
+							font-size:0.7rem;
+							line-height:2.4rem;
+							height:2.4rem;
+							overflow: hidden;
+						    text-overflow: ellipsis;
+						    white-space: nowrap;
+							text-align:center;
+							border-bottom: solid 1px #E3E3E3;
+							.select{
+								width:1rem ;
+								height: 1rem;
+								border:solid 1px #E3E3E3;
+								border-radius: 50%;
+							}
+							.current{
+								background:url(../../../assets/images/test/selectIcon.png)  no-repeat;
+								background-size: 100% 100%;
+							}
+						}
+					}
+				}
+				.app_selectLeft-alpha{
+					position:absolute;
+					left:0;
+					right:0;
+					top:0;
+					bottom:0;
+					.app_selectLeft-shadow{
+						&.up{
+							background-image:linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.3) 100%);
+						}
+						&.down{
+							background-image:linear-gradient(180deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,1) 100%);
+						}
+					}
+					.app_selectLeft-high{
+						height:2rem;
+						border-top:solid 1px @base-color;
+						border-bottom:solid 1px @base-color;
+						background-color:fade(@base-color,20%);
+					}
+				}
+			}
+			.app_selectLeft-null{
+				font-size:0.7rem;
+				color:#999;
+				&.m{
+					height:11rem;
+				}
+			}
+		}
+	}
+	&.app_selectLeft-enter-active,&.app_selectLeft-leave-active{
+        transition:all ease-out 0.3s;
+		.app_selectLeft-container{
+			transition:all ease-out 0.3s;
+		}
+    }
+    &.app_selectLeft-enter{
+        opacity: 0;
+		.app_selectLeft-container{
+			opacity: 0;
+			transform: translateY(100%);
+		}
+    }
+    &.app_selectLeft-enter-to,.app_selectLeft-leave{
+        opacity: 1;
+		.app_selectLeft-container{
+			opacity: 1;
+			transform: translateY(0);
+		}
+    }
+    &.app_selectLeft-leave-to{
+        opacity: 0;
+		.app_selectLeft-container{
+			opacity: 0;
+			transform: translateY(100%);
+		}
+    }
+}

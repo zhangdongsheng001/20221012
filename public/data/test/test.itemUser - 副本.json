@@ -1,0 +1,30 @@
+{
+    "status": 0,
+    "msg": "ok",
+    "returnData": {
+        "total":127,
+        "page_number":2,
+        "page_rows":5,
+        "list":[
+            {
+                "id_public_user_info": 7,
+                "user_type":3,
+                "nick_name": "唐三",
+                "weichat_img": "../../../../src/assets/images/test/photo_1.png",
+                "user_phone":"15802531670",
+                "upline_user_code":"3",//上线编码
+                "user_remark_001": "1",//1：身份审核中，2：审核通过，3：审核失败
+                "user_remark_002": "2",//钻石会员1，金牌会员2
+                "user_remark_003": "2",//类型 代理1，客户2
+								"user_remark_004": "2",//订单数量
+								"user_remark_005": "2",//成员
+								"user_remark_006": "2250",//佣金
+								"user_remark_007": "2020-10-06 19:20:50",//成为分销员时间
+								"user_remark_008": "",//身份证正面
+								"user_remark_009": "",//身份证背面
+								"user_remark_010": "",//真实姓名
+								"user_remark_011": ""//截图用逗号隔开
+            }
+        ]
+    }
+}

@@ -1,0 +1,82 @@
+{
+	"status": 0,
+	"msg": "ok",
+	"returnData": {
+		"list": [
+			{
+				"title": "首页",
+				"path": "home",
+				"id": "1",
+				"children": [
+
+				]
+			},
+			{
+				"title": "商品分类",
+				"path": "category",
+				"id": "2",
+				"children": [
+					{
+						"title": "商品详情",
+						"path": "detail",
+						"id": "2-1",
+						"parentId": "2"
+					},
+					{
+						"title": "购物车",
+						"path": "shopping",
+						"id": "2-2",
+						"parentId": "2"
+					},
+					{
+						"title": "支付",
+						"path": "hpay",
+						"id": "2-6",
+						"parentId": "6"
+					},
+					{
+						"title": "支付宝支付",
+						"path": "alipay",
+						"id": "2-7",
+						"parentId": "7"
+					},
+					{
+						"title": "支付成功",
+						"path": "alipaySuccess",
+						"id": "2-8",
+						"parentId": "8"
+					}
+				]
+			},
+			{
+				"title": "我的账本",
+				"path": "book",
+				"id": "3",
+				"children": [
+					{
+						"title": "订单详情",
+						"path": "detail",
+						"id": "3-1",
+						"parentId": "3"
+					}
+				]
+			},
+			{
+				"title": "我的",
+				"path": "my",
+				"id": "4",
+				"children": [
+
+				]
+			},
+			{
+				"title": "分享",
+				"path": "share",
+				"id": "5",
+				"children": [
+
+				]
+			}
+		]
+	}
+}

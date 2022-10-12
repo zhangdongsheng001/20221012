@@ -1,0 +1,73 @@
+/*
+ * bsx-sheet组件样式
+ *
+ * @Author: 谢力 843926058@qq.com
+ * @Date:   2018-06-06 14:08:51
+ * @Last Modified by:   谢力
+ * @Last Modified time: 2018-06-06 14:08:56
+ */
+.app_sheet-master{
+	left:50%;
+	top:0;
+	width:100%;
+	max-width:20rem;
+	bottom:0;
+	z-index:999;
+	transform:translateX(-50%);
+    background-color:rgba(0,0,0,0.3);
+	position:absolute;
+	.app_sheet-container{
+		position: absolute;
+    	left:0.5rem;
+		right:0.5rem;
+    	bottom:0.5rem;
+		.app_sheet-item{
+			background-color:#fff;
+			border-radius:0.3rem;
+			overflow:hidden;
+			span{
+				border-top:solid 1px #ddd;
+				text-align:center;
+				color:@base-color;
+				font-size:0.8rem;
+				line-height:2.5rem;
+				&.cancel{
+					color:#999;
+				}
+				&:first-child{
+					border-top:none;
+				}
+				&:active{
+					background-color:#eee;
+				}
+			}
+		}
+	}
+	&.app_sheet-enter-active,&.app_sheet-leave-active{
+        transition:all ease-out 0.3s;
+		.app_sheet-container{
+			transition:all ease-out 0.3s;
+		}
+    }
+    &.app_sheet-enter{
+        opacity: 0;
+		.app_sheet-container{
+			opacity: 0;
+			transform: translateY(100%);
+		}
+    }
+    &.app_sheet-enter-to,.app_sheet-leave{
+        opacity: 1;
+		.app_sheet-container{
+			opacity: 1;
+			transform: translateY(0);
+		}
+    }
+    &.app_sheet-leave-to{
+        opacity: 0;
+		.app_sheet-container{
+			opacity: 0;
+			transform: translateY(100%);
+		}
+    }
+}

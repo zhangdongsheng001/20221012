@@ -1,0 +1,74 @@
+/*
+ * bsx-radio组件样式
+ *
+ * @Author: 谢力 843926058@qq.com
+ * @Date:   2018-06-06 14:08:51
+ * @Last Modified by:   谢力
+ * @Last Modified time: 2018-06-06 14:08:56
+ */
+.app_radio{
+	position:relative;
+	cursor:default;
+	.app_radio-icon{
+		position:relative;
+		width:0.8rem;
+		height:0.8rem;
+		border:solid 1px #ddd;
+		border-radius:50%;
+		.app_radio-inner{
+			position:absolute;
+			left:0;
+			top:0;
+			bottom:0;
+			right:0;
+			i{
+				&.icon{
+					position:absolute;
+					left:0.1rem;
+					top:0.1rem;
+					right:0.1rem;
+					bottom:0.1rem;
+					background-color:@base-color;
+					border-radius:50%;
+				}
+			}
+			&.app_radio-enter-active,&.app_radio-leave-active{
+		        transition:all 0.15s ease-out;
+		    }
+		    &.app_radio-enter{
+		        opacity: 0;
+				transform:scale(0);
+		    }
+		    &.app_radio-enter-to,.app_radio-leave{
+		        opacity: 1;
+				transform:scale(1);
+		    }
+		    &.app_radio-leave-to{
+		        opacity: 0;
+				transform:scale(0);
+		    }
+		}
+		.app_radio-input{
+			display:none;
+		}
+	}
+	.app_radio-label{
+		font-size:0.6rem;
+		margin-left:0.3rem;
+		line-height:0.8rem;
+	}
+	&.is-checked{
+		.app_radio-icon{
+			border-color:@base-color;
+		}
+		.app_radio-label{
+			color:@base-color;
+		}
+	}
+	&.disabled{
+		opacity:0.5;
+		.app_radio-icon{
+			background-color:#eee;
+		}
+	}
+}

@@ -1,0 +1,16 @@
+{
+    "status": 0,
+    "msg": "ok",
+    "returnData": {
+        "list":[
+            {
+				"value": "shejiyuanze",
+				"label": "设计原则"
+			},
+			{
+				"value": "daohang",
+				"label": "导航"
+			}
+        ]
+    }
+}

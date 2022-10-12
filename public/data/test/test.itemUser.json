@@ -1,0 +1,118 @@
+{
+	"status": 0,
+	"msg": "ok",
+	"returnData": {
+		"total": 127,
+		"page_number": 2,
+		"page_rows": 5,
+		"public_user_list": [{
+			"id_public_user_info": 1,
+			"user_type":1,
+			"nick_name": "张岚",
+			"weichat_img": "photo_1.png",
+			"user_phone":"15802531670",
+			"upline_user_code":"",
+			"user_remark_001": "1"
+		},{
+			"id_public_user_info": 2,
+			"user_type":2,
+			"nick_name": "迪丽热巴",
+			"weichat_img": "photo_1.png",
+			"user_phone":"15802531670",
+			"upline_user_code":"3",
+			"user_remark_001": "1"
+		},{
+			"id_public_user_info": 3,
+			"user_type":3,
+			"nick_name": "唐三",
+			"weichat_img": "photo_1.png",
+			"user_phone":"15802531670",
+			"upline_user_code":"",
+			"user_remark_001": "1",
+			"user_remark_007": "2020-01-06 19:20:50"
+		},{
+			"id_public_user_info": 4,
+			"user_type":4,
+			"nick_name": "唐三",
+			"weichat_img": "photo_1.png",
+			"user_phone":"15802531670",
+			"upline_user_code":"",
+			"user_remark_001": ""
+		},{
+			"id_public_user_info": 5,
+			"user_type":2,
+			"nick_name": "唐三",
+			"weichat_img": "photo1.png",
+			"user_phone":"15802531670",
+			"upline_user_code":"3",
+			"user_remark_001": 1,
+			"user_remark_002": "1",
+			"user_remark_003": "1",
+			"user_remark_007": "2020-05-06 19:20:50"
+		},{
+			"id_public_user_info": 6,
+			"user_type":3,
+			"nick_name": "唐三",
+			"weichat_img": "photo2.png",
+			"user_phone":"15802531670",
+			"upline_user_code":"3",
+			"user_remark_001": "",
+			"user_remark_002": "1",
+			"user_remark_003": "2",
+			"user_remark_004": "2",
+			"user_remark_005": "2",
+			"user_remark_006": "2250",
+			"user_remark_007": "2020-08-05 19:20:50",
+			"user_remark_008": "small-pic.png",
+			"user_remark_009": "small-pic.png",
+			"user_remark_010": "计大胜",
+			"user_remark_011": "small-pic.png"
+		},{
+			"id_public_user_info": 7,
+			"user_type":1,
+			"nick_name": "唐三",
+			"weichat_img": "photo3.png",
+			"user_phone":"15802531670",
+			"upline_user_code":"3",
+			"user_remark_001": 3,
+			"user_remark_002": "1",
+			"user_remark_003": "2",
+			"user_remark_004": "2",
+			"user_remark_005": "2",
+			"user_remark_006": "2250",
+			"user_remark_007": "2020-10-06 19:20:50"
+		},{
+			"id_public_user_info": 8,
+			"user_type":1,
+			"nick_name": "唐三",
+			"weichat_img": "photo_1.png",
+			"user_phone":"15802531670",
+			"upline_user_code":"3",
+			"user_remark_001": 2,
+			"user_remark_002": "2",
+			"user_remark_003": "1",
+			"user_remark_004": "2",
+			"user_remark_005": "2",
+			"user_remark_006": "2250",
+			"user_remark_007": "2020-10-06 10:20:50"
+		},{
+			"id_public_user_info": 9,
+			"user_type":1,
+			"nick_name": "唐三",
+			"weichat_img": "photo2.png",
+			"user_phone":"15802531670",
+			"upline_user_code":"3",
+			"user_remark_001": "",
+			"user_remark_002": "2",
+			"user_remark_003": "2",
+			"user_remark_004": "2",
+			"user_remark_005": "2",
+			"user_remark_006": "2250",
+			"user_remark_007": "2020-10-06 11:20:50",
+			"user_remark_008": "",
+			"user_remark_009": "",
+			"user_remark_010": "",
+			"user_remark_011": ""
+		}]
+	}
+}

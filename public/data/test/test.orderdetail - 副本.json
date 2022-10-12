@@ -1,0 +1,63 @@
+{
+	"status": 0,
+	"msg": "ok",
+	"returnData": {
+		"total": 127,
+		"page_number": 2,
+		"page_rows": 5,
+		"public_order_list": [{
+			"id_public_goods_order_record": 1,
+			"liang_dian": "1,2,3,5",
+			"goods_price": "3600元",
+			"sales_describe": "月",
+			"goods_type": 1,
+			"goods_name": "华谊逸品澜湾北区7号楼",
+			"time_order":"2021.04.13 13:20:20",
+			"ship_state":114,
+			"ways_of_payment":1121,//支付方式
+			"append_order_remark_001":15802531670 ,//客户手机号
+			"append_order_remark_002":"15%", //提成比例
+			"append_order_remark_003":"50%", //收佣比例
+			"append_order_remark_004":123456,//合同编号
+			"append_order_remark_005":3600,//租金
+			"append_order_remark_006":3500,//佣金
+			"append_order_remark_007":525,//提成
+			"append_order_remark_008":爱丽丝,//用户
+			"append_order_remark_009":1,//等级
+			"append_order_remark_010":"2021.04.13 13:20:20",//打款时间
+			"append_order_remark_011":"hetong.png",//合同图片
+			"goods_info_remark_001": "南", //朝向
+			"goods_info_remark_002": "30㎡", //面积
+			"goods_info_remark_003": "5/18层", //楼层
+			"goods_info_remark_004": "4室1厅1卫", //户型
+			"goods_info_remark_005": "3栋", //栋号
+			"goods_info_remark_006": "--", //室号
+			"goods_info_remark_007": "电梯", //电梯/楼梯
+			"goods_info_remark_008": "主卧", //卧室类型
+			"goods_info_remark_009": "押一付三", //付款方式
+			"goods_info_remark_010": "住宅", //房屋用途
+			"goods_info_remark_011": "精装", //装修类型
+			"goods_info_remark_012": "2021.05.20", //入住时间
+			"goods_info_remark_013": "12345678", //房源编号
+			"goods_info_remark_014": "床,衣柜,热水器,梳妆台,洗衣机", //房屋配置
+			"goods_info_remark_015": "南翔镇陈翔路532号", //详细地址
+			"goods_info_remark_016": "价格便宜，离地铁一号线很近出行非常方便， 周边有大型购物商城", //房源描述
+			"goods_info_remark_017": "华谊逸品澜湾", //小区名称、物业名称
+			"goods_info_remark_018": "2010年", //建筑年代
+			"goods_info_remark_019": "2020.04.30", //挂牌时间
+			"goods_info_remark_020": "7.5元/㎡/天", //单价
+			"goods_info_remark_022": "商品房", //权属
+			"goods_info_remark_023": "板房", //结构
+			"goods_info_remark_024": "70年", //产权年限
+			"goods_info_remark_025": "2022.10.10", //交房时间
+			"goods_info_remark_026": "2021.04.30", //开盘时间
+			"goods_info_remark_027": "--", //佣金
+			"goods_info_remark_028": "13658090968，15802531670", //看房联系电话
+			"goods_info_remark_029": "2021.04.30", //开盘时间
+			"goods_info_remark_030": "2021.04.30", //开盘时间
+			"goods_main_image": "../../../../src/assets/images/test/photo_1.png",//图片
+			"goods_play": "@/assets/images/test/cover_image.jpg",//视频
+			"time_update":"202.04.21"//更新时间
+		}]
+	}
+}

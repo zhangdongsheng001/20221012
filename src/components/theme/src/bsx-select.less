@@ -1,0 +1,156 @@
+/*
+ * bsx-select组件样式
+ *
+ * @Author: 谢力 843926058@qq.com
+ * @Date:   2018-06-06 14:08:51
+ * @Last Modified by:   谢力
+ * @Last Modified time: 2018-06-06 14:08:56
+ */
+.app_select-master{
+	left:50%;
+	top:0;
+	width:100%;
+	max-width:20rem;
+	bottom:0;
+	z-index:999;
+	transform:translateX(-50%);
+    background-color:rgba(0,0,0,0.3);
+	position:absolute;
+	.app_select-container{
+		position:absolute;
+		bottom:0;
+		left:0;
+		right:0;
+		background-color:#fff;
+		border-radius: 0.85rem 0.85rem 0 0;
+		overflow:hidden;
+		padding:1.5rem 0.5rem 1.5rem;
+		color:#222;
+		.app_select-head{
+			line-height:2rem;
+			z-index:2;
+		}
+		.app_select-bottom{
+			margin-top:0.5rem;
+			span{
+				margin: 0 2.5rem;
+				display: inline-block;
+				width: 4rem;
+				height: 1.8rem;
+				line-height: 1.8rem;
+				background-color: #F0F0F0;
+				border-radius: 0.2rem;
+				text-align: center;
+				color: #7A7B81;
+				font-size: 0.8rem;
+			}
+			.sure{
+				color: #fff;
+				background-color: @base-active-color !important;
+			}
+		}
+		.app_select-body{
+			position:relative;
+			z-index:1;
+			.app_select-main{
+				position:relative;
+				height:12rem;
+				&.m:after{
+					content:'';
+					top:0;
+					left:0;
+					bottom:0;
+					position:absolute;
+					border-left:solid 1px #ddd;
+					z-index:-1;
+				}
+				.app_select-box{
+					position:relative;
+					//overflow:hidden;
+					overflow-y: scroll;
+					.app_select-list{
+						position:relative;
+						&.active{
+							transition:all ease-out 0.3s;
+						}
+						.app_select-item{
+							padding: 0 0.5rem;
+							font-size:0.7rem;
+							line-height:2.4rem;
+							height:2.4rem;
+							overflow: hidden;
+						    text-overflow: ellipsis;
+						    white-space: nowrap;
+							text-align:center;
+							font-weight: bold;
+							.select{
+								width:1rem ;
+								height: 1rem;
+								border:solid 1px #E3E3E3;
+								border-radius: 50%;
+							}
+							.current{
+								background:url(../../../assets/images/test/selectIcon.png)  no-repeat;
+								background-size: 100% 100%;
+							}
+						}
+					}
+				}
+				.app_select-alpha{
+					position:absolute;
+					left:0;
+					right:0;
+					top:0;
+					bottom:0;
+					.app_select-shadow{
+						&.up{
+							background-image:linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.3) 100%);
+						}
+						&.down{
+							background-image:linear-gradient(180deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,1) 100%);
+						}
+					}
+					.app_select-high{
+						height:2.4rem;
+						border-top:solid 1px #F0F0F0;
+						border-bottom:solid 1px #F0F0F0;
+					}
+				}
+			}
+			.app_select-null{
+				font-size:0.7rem;
+				color:#999;
+				&.m{
+					height:11rem;
+				}
+			}
+		}
+	}
+	&.app_select-enter-active,&.app_select-leave-active{
+        transition:all ease-out 0.3s;
+		.app_select-container{
+			transition:all ease-out 0.3s;
+		}
+    }
+    &.app_select-enter{
+        opacity: 0;
+		.app_select-container{
+			opacity: 0;
+			transform: translateY(100%);
+		}
+    }
+    &.app_select-enter-to,.app_select-leave{
+        opacity: 1;
+		.app_select-container{
+			opacity: 1;
+			transform: translateY(0);
+		}
+    }
+    &.app_select-leave-to{
+        opacity: 0;
+		.app_select-container{
+			opacity: 0;
+			transform: translateY(100%);
+		}
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "status": 0,
+    "msg": "ok",
+    "returnData": {
+        "list":[
+            {
+                "value": "cexiangdaohang",
+                "label": "侧向导航"
+            },
+            {
+                "value": "dingbudaohang",
+                "label": "顶部导航"
+            }
+        ]
+    }
+}

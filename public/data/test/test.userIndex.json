@@ -1,0 +1,68 @@
+{
+	"status": 0,
+	"msg": "ok",
+	"returnData": {
+		"menu":[
+			{"id_public_goods_type":"1","type_name":"合租","icon":"menu1.png"},
+			{"id_public_goods_type":"2","type_name":"整租","icon":"menu2.png"},
+			{"id_public_goods_type":"3","type_name":"公寓","icon":"menu3.png"},
+			{"id_public_goods_type":"4","type_name":"新房","icon":"menu4.png"},
+			{"id_public_goods_type":"5","type_name":"二手房","icon":"menu5.png"},
+			{"id_public_goods_type":"6","type_name":"商铺办公","icon":"menu6.png"},
+			{"id_public_goods_type":"7","type_name":"搬家","icon":"menu7.png"},
+			{"id_public_goods_type":"8","type_name":"保洁","icon":"menu8.png"}
+		],
+		"list": [{
+			"user_type": 0,
+			"banner":[
+				{"id_front_page_setting":11,"img_4_page_link_wc":"banner.png"},
+				{"id_front_page_setting":12,"img_4_page_link_wc":"banner1.png"},
+				{"id_front_page_setting":13,"img_4_page_link_wc":"banner2.png"}
+			],
+			"lunbo":[
+				{"id_front_page_setting":14,"img_4_page_link_wc":"ad1.png","type":"1","name":"华谊逸品澜湾北区"},
+				{"id_front_page_setting":15,"img_4_page_link_wc":"ad2.png","type":"1","name":"海派青城"},
+				{"id_front_page_setting":16,"img_4_page_link_wc":"ad3.png","type":"1","name":"海派青城"}
+			]
+		},
+		{
+			"user_type": 1,
+			"banner":[
+				{"id_front_page_setting":21,"img_4_page_link_wc":"banner3.png"},
+				{"id_front_page_setting":22,"img_4_page_link_wc":"banner4.png"},
+				{"id_front_page_setting":23,"img_4_page_link_wc":"banner5.png"}
+			],
+			"lunbo":[
+				{"id_front_page_setting":24,"img_4_page_link_wc":"ad4.png","type":"0","name":"华谊逸品澜湾北区"},
+				{"id_front_page_setting":25,"img_4_page_link_wc":"ad3.png","type":"0","name":"海派青城"},
+				{"id_front_page_setting":26,"img_4_page_link_wc":"ad1.png","type":"0","name":"华谊逸品澜湾北区"}
+			]
+		},
+		{
+			"user_type": 2,
+			"banner":[
+				{"id_front_page_setting":31,"img_4_page_link_wc":"banner1.png"},
+				{"id_front_page_setting":32,"img_4_page_link_wc":"banner4.png"},
+				{"id_front_page_setting":33,"img_4_page_link_wc":"banner5.png"}
+			],
+			"lunbo":[
+				{"id_front_page_setting":34,"img_4_page_link_wc":"ad1.png","type":"0","name":"华谊逸品澜湾北区"},
+				{"id_front_page_setting":35,"img_4_page_link_wc":"ad3.png","type":"0","name":"华谊逸品澜湾北区"},
+				{"id_front_page_setting":36,"img_4_page_link_wc":"ad2.png","type":"0","name":"华谊逸品澜湾北区"}
+			]
+		},
+		{
+			"user_type": 3,
+			"banner":[
+				{"id_front_page_setting":41,"img_4_page_link_wc":"banner2.png"},
+				{"id_front_page_setting":42,"img_4_page_link_wc":"banner3.png"},
+				{"id_front_page_setting":43,"img_4_page_link_wc":"banner5.png"}
+			],
+			"lunbo":[
+				{"id_front_page_setting":44,"img_4_page_link_wc":"ad4.png","type":"2","name":"华谊逸品澜湾北区"},
+				{"id_front_page_setting":45,"img_4_page_link_wc":"ad2.png","type":"2","name":"华谊逸品澜湾北区"},
+				{"id_front_page_setting":46,"img_4_page_link_wc":"ad1.png","type":"2","name":"华谊逸品澜湾北区"}
+			]
+		}]
+	}
+}
