@@ -25,7 +25,7 @@
         </div>
       </div>
     <div class="good-swipe">
-      <mt-swipe :auto="400000000000000" :prevent="true" class="swipe">
+      <mt-swipe :auto="4000" :prevent="true" class="swipe">
       <mt-swipe-item class="swipeItem">
          <img src="../../../../src/assets/images/test/banner.png" alt="">
       </mt-swipe-item>
