@@ -25,15 +25,15 @@
         </div>
       </div>
     <div class="good-swipe">
-      <mt-swipe :auto="4000" :prevent="true" class="swipe">
-      <mt-swipe-item>
+      <mt-swipe :auto="400000000000000" :prevent="true" class="swipe">
+      <mt-swipe-item class="swipeItem">
          <img src="../../../../src/assets/images/test/banner.png" alt="">
       </mt-swipe-item>
-      <mt-swipe-item>
+      <mt-swipe-item class="swipeItem">
         <img src="../../../../src/assets/images/test/banner3.png" alt="">
 
       </mt-swipe-item>
-      <mt-swipe-item>
+      <mt-swipe-item class="swipeItem">
         <img src="../../../../src/assets/images/test/banner5.png" alt="">
 
       </mt-swipe-item>
@@ -99,7 +99,7 @@
        </div>
     </div>
    <div style="width: 100%;
-  height: 40px;"> </div>
+  height: 1rem;"> </div>
      
     <innerContent></innerContent>
 
@@ -507,6 +507,8 @@ export default {
   height: 2300px;
   background: #fff;
   overflow-y: auto; //
+  line-height: normal;
+
 }
 .ui-header-address {
   width: 4.6rem;
@@ -649,9 +651,9 @@ export default {
     }
     img[lazy="loading"] {
       width: 20%;
-      max-width: 20px;
+      max-width: 0.4rem;
       height: 20%;
-      max-height: 20px;
+      max-height: 0.4rem;
       animation: loading-rotate linear 0.7s infinite;
       position: absolute;
       left: 50%;
@@ -988,34 +990,35 @@ export default {
   }
 }
 .good-swipe /deep/ .mint-swipe-indicator.is-active {
-  width: 14px;
-  height: 6px;
+  width: 0.36rem;
+  height: 0.15rem;
   display: inline-block;
-  border-radius: 7px;
+  border-radius: 0.15rem;
   background: rgb(253, 60, 92);
   opacity: 1;
-  margin: 0 12px;
+  margin: 0 0.3rem;
 }
 .good-swipe /deep/ .mint-swipe-indicator {
-  width: 14px;
-  height: 6px;
+  width: 0.36rem;
+  height: 0.15rem;
   display: inline-block;
-  border-radius: 7px;
+  border-radius: 0.18rem;
   background: #000;
   opacity: 0.5;
-  margin: 0 12px;
+  margin: 0 0.3rem;
 }
 .swipe {
-  margin: 0 30px auto;
-  width: 686px;
-  height: 300px;
-  border-radius: 20px;
-  swipeItem {
+  margin: 0 1rem auto;
+  width: 18rem;
+  height: 7.8rem;
+  border-radius: 0.5rem;
+  .swipeItem {
     width: 100%;
     height: 100%;
     img {
+      height: 100%;
       width: 100%;
-      height: 300px;
+      
     }
   }
 }
@@ -1023,10 +1026,9 @@ export default {
   display: none;
 }
 .cell-swipe {
-  margin: 0 30px;
-  padding-top: 20px;
-  width: 686px;
-  height: 320px;
+  margin: 0 1rem;
+  padding-top: 0.5rem;
+  width: 18rem;
   display: flex;
   flex-direction: row;
   overflow-y: hidden;
@@ -1035,36 +1037,37 @@ export default {
     position: relative;
     .text {
       position: absolute;
-      bottom: 0px;
-      left: 25px;
+      bottom: 0.25rem;
+      left: 0.5rem;
       color: #fff;
-      font-size: 24px;
+      font-size: 0.5rem;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      width: 300px;
+      width: 8rem;
     }
     img {
-      border-radius: 20px;
+      border-radius: 0.5rem;
+      width: 10rem;
+      height: 8rem;
     }
-    width: 400px;
-    height: 300px;
-    margin: 0 10px;
+    
+    margin: 0 0.25rem;
   }
 }
 .top {
-  margin: 30px;
+  margin: 1rem;
   display: flex;
   .top-item {
     display: flex;
     .top-item-list1 {
-      width: 110px;
-      height: 70px;
-      font-size: 24px;
-      line-height: 70px;
+      width: 3rem;
+      height: 1.8rem;
+      font-size: 0.5rem;
+      line-height: 1.8rem;
       img {
-        width: 18px;
-        height: 18px;
+        width: 0.5rem;
+        height: 0.5rem;
 
         margin: auto;
       }
@@ -1073,58 +1076,58 @@ export default {
   .top-item {
     .top-item-list2 {
       display: flex;
-      width: 450px;
-      height: 70px;
+      width: 11.2rem;
+      height: 1.8rem;
       background: #f8f9fa;
-      border-radius: 20px;
-      margin-left: 25px;
+      border-radius: 0.5rem;
+      margin-left: 0.5rem;
       color: #dcdee2;
-      font-style: 22px;
-      line-height: 70px;
+      font-style: 0.4rem;
+      line-height: 1.8rem;
       img {
         display: block;
-        margin: 22px 30px;
+        margin: 0.4rem 0.5rem;
       }
     }
   }
   .top-item {
     .top-item-list3 {
-      margin-left: 24px;
-      width: 70px;
-      height: 70px;
+      margin-left: 1.5rem;
+      width: 1.8rem;
+      height: 1.8rem;
       background: #f8f9fa;
-      border-radius: 20px;
+      border-radius: 0.4rem;
       img {
         display: block;
-        width: 34px;
-        margin: 15px auto;
+        width: 0.9rem;
+        margin: 0.4rem auto;
       }
     }
   }
 }
 .list {
-  margin: 30px;
-  width: 680px;
-  height: 130px;
+  margin: 0.5rem;
+  width: 18.2rem;
+  height: 3rem;
   .listItem {
     display: flex;
     justify-content: space-between;
     text-align: center;
     .listItembtn {
       img {
-        width: 95px;
-        height: 95px;
+        width: 2.5rem;
+        height: 2.5rem;
       }
     }
     .listItembtn-text {
-      font-size: 22px;
+      font-size: 0.5rem;
     }
   }
 }
 // .btn{display: flex;
 //   justify-content: space-between;
 
-//   margin: 0 30px;
+//   margin: 0 0.5rem;
 //   text-align: center;
 //   line-height: 67px;
 //   .btn-item{
@@ -1137,35 +1140,35 @@ export default {
 //   }
 // }
 .detail {
-  margin: 40px 30px;
+  margin: 1rem 0.5rem;
   display: flex;
   .detailItemList1 {
     img {
-      width: 270px;
-      height: 202px;
-      border-radius: 20px;
+      width: 7.8rem;
+      height: 5.3rem;
+      border-radius: 0.4rem;
     }
   }
   .detailItemList2 {
     line-height: normal;
-    margin-left: 30px;
-    width: 380px;
-    height: 202px;
+    margin-left: 0.5rem;
+    width: 10rem;
+    height: 5.3rem;
 
     display: flex;
     flex-direction: column;
     .detailItemText1 {
       display: flex;
-      width: 400px;
+      width: 10.5rem;
       div:nth-child(1) {
         font-weight: 400;
-        font-size: 28px;
+        font-size: 0.8rem;
         white-space: nowrap;
       }
       div:nth-child(2) {
-        margin-left: 10px;
+        margin-left: 0.25rem;
         font-weight: 300;
-        font-size: 26px;
+        font-size: 0.7rem;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -1175,15 +1178,15 @@ export default {
       display: flex;
       color: #aaa;
       div:nth-child(1) {
-        font-size: 24px;
+        font-size: 0.6rem;
         white-space: nowrap;
       }
       div:nth-child(2) {
-        margin: 0 15px;
+        margin: 0 0.4rem;
         font-weight: 200;
       }
       div:nth-child(3) {
-        font-size: 24px;
+        font-size: 0.6rem;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -1192,29 +1195,29 @@ export default {
 
     .detailItemText3 {
       display: flex;
-      font-size: 22px;
+      font-size: 0.5rem;
       text-align: center;
-      margin-top: 10px;
+      margin-top: 0.25rem;
       .btn {
-        margin: 0 10px;
-        padding: 0 10px;
-        line-height: 40px;
-        border-radius: 25px;
+        margin: 0 0.25rem;
+        padding: 0 0.25rem;
+        line-height: 1rem;
+        border-radius: 0.6rem;
         background: #f8f9fa;
         color: #7a7b81;
       }
     }
     .detailItemText4 {
       display: flex;
-      margin-top: 40px;
+      margin-top: 1rem;
       div:nth-child(1) {
         color: #fd3c5c;
-        font-size: 28px;
+        font-size: 0.8rem;
         font-weight: 400;
       }
       div:nth-child(2) {
         color: #fd3c5c;
-        font-size: 22px;
+        font-size: 0.5rem;
         font-weight: 200;
       }
     }
