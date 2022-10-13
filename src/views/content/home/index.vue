@@ -3,7 +3,7 @@
  */ -->
 <template>
   <div class="ui-mode-container ui-mode-box flex-col bg">
-    <div class="top">
+    <!-- <div class="top">
         <div class="top-item">
           <div class="top-item-list1">上海市
           <img src="../../../../src/assets/images/base/icon_more.png" alt="">
@@ -25,7 +25,8 @@
           </div>
 
         </div>
-      </div>
+      </div> -->
+    <Search @func="get"></Search>
     <div class="good-swipe">
       <mt-swipe :auto="4000" :prevent="true" class="swipe">
       <mt-swipe-item class="swipeItem">
@@ -104,7 +105,7 @@
   height: 1rem;"> </div>
      
     <innerContent></innerContent>
-
+    
     <!-- <div class="btn">
       <div class="btn-item" >位置<img src="../../../../src/assets/images/base/icon_more.png" alt=""></div>
       <div class="btn-item">租金<img src="../../../../src/assets/images/base/icon_more.png" alt=""></div>
@@ -201,6 +202,8 @@ import mixinCommon from "../mixins/common";
 import mixinRequest from "../mixins/request";
 import mixinShare from "../mixins/share";
 import innerContent from "./src/content";
+import soso from "./soso";
+import Search from "./src/search";
 import Ocity from "@/assets/data/city";
 import { LocalStorage } from "@/utils/storage";
 import { getDateInfo } from "@/utils/tool";
@@ -208,6 +211,7 @@ import { getDateInfo } from "@/utils/tool";
 export default {
   data() {
     return {
+      getdata:[],
       public_agent_info: {},
       public_user_info: {},
       frontpage_4_weichat_arr: null,
@@ -272,6 +276,10 @@ export default {
     this.initLogin();
   },
   methods: {
+    get(data){
+this.getdata=data
+    }
+    ,
     /** 模拟登录 */
     initLogin() {},
     /*
@@ -496,6 +504,8 @@ export default {
   },
   components: {
     innerContent,
+    soso,
+    Search,
   },
   beforeDestroy() {
     this.handleCouponDetachEvent();
