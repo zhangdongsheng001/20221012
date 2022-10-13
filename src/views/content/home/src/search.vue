@@ -32,7 +32,7 @@
             </div>
             <div class="serviceContent">
                 <div class="serviceContentList">
-                    <div class="serviceContentListItem1" style="color:#dcdee2;width: 100%; height: 2rem;">选择城市</div>
+                    <div class="serviceContentListItem1" style="color:#dcdee2;width: 100%; height: 2rem;line-height: 2rem; ">选择城市</div>
                     <div class="serviceContentListItem">132</div>
                     <div class="serviceContentListItem">132</div>
 
