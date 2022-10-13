@@ -506,7 +506,7 @@ export default {
 <style lang="less" scoped>
 .bg {
   width: 100%;
-  height: 100%;
+  height: 2300px;
   background: #fff;
   overflow-y: auto; //
   line-height: normal;
