@@ -1044,7 +1044,7 @@ export default {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      width: 8rem;
+      width: 6.5rem;
     }
     img {
       border-radius: 0.5rem;
@@ -1106,9 +1106,9 @@ export default {
   }
 }
 .list {
-  margin: 0.5rem;
-  width: 18.2rem;
-  height: 3rem;
+  margin: 1rem;
+  width: 18rem;
+  height: 2.5rem;
   .listItem {
     display: flex;
     justify-content: space-between;
@@ -1120,6 +1120,7 @@ export default {
       }
     }
     .listItembtn-text {
+      line-height: 1rem;
       font-size: 0.5rem;
     }
   }
