@@ -70,9 +70,11 @@ export default {
 </script >
 
 <style lang="less" scoped>
+
 .top {
   margin: 1rem;
   display: flex;
+
   .top-item {
     display: flex;
     .top-item-list1 {
@@ -121,8 +123,7 @@ export default {
   }
 }
 
-.service{
-   
+.service{position: fixed;top: 3.5rem; left: 0;right: 0;bottom: 0;z-index: 999;
     .topBg{z-index: 999;
     position: fixed;top: 3.5rem; left: 0;right: 0;bottom: 0;background-color: rgba(0, 0, 0, 0.5);
 }
@@ -131,8 +132,9 @@ export default {
     z-index: 999;
     height: 22rem;
     background: #f8f9fa;
-    top:3.5rem;
+    top:0rem;
     width: 100%;
+    
     .serviceContentList{
         height: 20rem;
         margin: 0 1rem;
