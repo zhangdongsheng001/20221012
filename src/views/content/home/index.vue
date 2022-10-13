@@ -11,9 +11,11 @@
           </div>
         </div>
         <div class="top-item">
+          
           <div class="top-item-list2">
-            <img src="../../../../src/assets/images/search.png" alt="">搜索
-            
+            <img src="../../../../src/assets/images/search.png" alt="">
+            <input style="border:0;font-size: 0.5rem;background-color: #f8f9fa;width: 9rem;color: #dcdee2;" type="text" value="搜索">
+
           </div>
 
         </div>
@@ -504,7 +506,7 @@ export default {
 <style lang="less" scoped>
 .bg {
   width: 100%;
-  height: 2300px;
+  height: 100%;
   background: #fff;
   overflow-y: auto; //
   line-height: normal;
